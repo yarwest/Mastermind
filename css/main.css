@@ -4,32 +4,22 @@
     text-align: center;
 }
 
-#attempts, #input {
-    position: relative;
-}
-
 .ball {
-    position: static;
-    width: 75px;
-    height: 125px;
-    background-color: grey;
+    border-radius: 50%;
+    border: dashed black 3px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
     margin: 0 25px;
     margin-bottom: 25px !important;
     margin-top: 25px !important;
-    display: none;
     float: left;
-    text-align: center;
 }
 
 button {
     text-align: center !important;
 }
 
-#reset {
-    clear: both;
-}
-
-#message {
+#main, #reset, #submit {
     display: none;
-    text-align: center;
 }

@@ -18,18 +18,20 @@
             <h1>Mastermind written in jQuery</h1>
             <h2>Find the right combination</h2>
             <button id="start">Start</button>
-            <div id="attempts">
+            <div id="main">
+                <div id="attempts">
+                </div>
+                <div id="input">
+                    <script>
+                        for(var i = 1; i < 5; i++) {
+                            document.getElementById("input").innerHTML += "<div id='ball" + i + "' class='ball'></div>";
+                        }
+                    </script>
+                </div>
             </div>
-            <div id="input">
-                <script>
-                    for(var i = 1; i < 5; i++) {
-                        document.getElementById('input').innerHTML += "<div id='ball" + String(i) + "' class='ball'></div>";
-                    }
-                </script>
-            </div>
-            <p id="message"></p>
             <button id="submit">Submit</button>
             <button id="reset">Reset</button>
         </div>
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
         <script src="js/main.js"></script>
     </body>
