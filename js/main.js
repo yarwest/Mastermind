@@ -1,5 +1,5 @@
     var color = ['red', 'yellow', 'blue', 'green', 'black', 'grey', 'orange', 'brown'];
-    var currentColor = 0;
+    var currentColors = [0, 0, 0, 0];
     var nColor = color.length;
 
     $('#start').click(function() {
@@ -9,41 +9,30 @@
         $('#reset').delay(500).fadeIn(500);
     });
 
+    $('#ball0').click(function() {
+        incrementColor(0);
+    });
+
     $('#ball1').click(function() {
-        if(currentColor == nColor-1) {
-            currentColor = 0
-        } else {
-            currentColor++;
-        }
-        $('#ball1').css('background-color', color[currentColor]);
+        incrementColor(1);
     });
 
     $('#ball2').click(function() {
-        if(currentColor == nColor-1) {
-            currentColor = 0
-        } else {
-            currentColor++;
-        }
-        $('#ball2').css('background-color', color[currentColor]);
+        incrementColor(2);
     });
 
     $('#ball3').click(function() {
-        if(currentColor == nColor-1) {
-            currentColor = 0
-        } else {
-            currentColor++;
-        }
-        $('#ball3').css('background-color', color[currentColor]);
+        incrementColor(3);
     });
 
-    $('#ball4').click(function() {
-        if(currentColor == nColor-1) {
-            currentColor = 0
+    function incrementColor(number) {
+        if(currentColors[number] == nColor-1) {
+            currentColors[number] = 0;
         } else {
-            currentColor++;
+            currentColors[number]++;
         }
-        $('#ball4').css('background-color', color[currentColor]);
-    });
+        $('#ball' + number).css('background-color', color[currentColors[number]]);
+    }
 
     $('#reset').click(function() {
         location.reload();
