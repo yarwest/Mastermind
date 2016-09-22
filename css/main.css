@@ -1,0 +1,35 @@
+#page-wrap {
+    width: 625px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#attempts, #input {
+    position: relative;
+}
+
+.ball {
+    position: static;
+    width: 75px;
+    height: 125px;
+    background-color: grey;
+    margin: 0 25px;
+    margin-bottom: 25px !important;
+    margin-top: 25px !important;
+    display: none;
+    float: left;
+    text-align: center;
+}
+
+button {
+    text-align: center !important;
+}
+
+#reset {
+    clear: both;
+}
+
+#message {
+    display: none;
+    text-align: center;
+}

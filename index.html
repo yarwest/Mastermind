@@ -1,0 +1,35 @@
+<!doctype html>
+<!--
+	Yarno Boelens
+	Mastermind in jQuery
+	created on: 22-9-2016
+-->
+
+<html>
+    <head>
+        <title>Mastermind in jQuery</title>
+        <meta name="description" content="A game of Mastermind written in jQuery">
+        <meta name="keywords" content="jQuery, Mastermind">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+    </head>
+    <body>
+        <div id="page-wrap">
+            <h1>Mastermind written in jQuery</h1>
+            <h2>Find the right combination</h2>
+            <button id="start">Start</button>
+            <div id="attempts">
+            </div>
+            <div id="input">
+                <script>
+                    for(var i = 1; i < 5; i++) {
+                        document.getElementById('input').innerHTML += "<div id='ball" + String(i) + "' class='ball'></div>";
+                    }
+                </script>
+            </div>
+            <p id="message"></p>
+            <button id="submit">Submit</button>
+            <button id="reset">Reset</button>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
