@@ -1,4 +1,4 @@
-var cards = ['block', 'block', 'circle', 'circle', 'triangle', 'triangle', 'square', 'square', 'cilinder', 'cilinder', 'plain', 'plain', 'cube', 'cube', 'sphere', 'sphere', 'ball', 'ball', 'pentagram', 'pentagram'];
+/*var cards = ['block', 'block', 'circle', 'circle', 'triangle', 'triangle', 'square', 'square', 'cilinder', 'cilinder', 'plain', 'plain', 'cube', 'cube', 'sphere', 'sphere', 'ball', 'ball', 'pentagram', 'pentagram'];
 
 //stats
 var score = 0;
@@ -122,4 +122,4 @@ function stats() {
     document.getElementById('nCards').innerHTML = "Number of remaining cards: " + nCards;
     document.getElementById('score').innerHTML = "Your score is: " + score;
     document.getElementById('attempts').innerHTML = "Lives left: " + attempts;
-}
+}*/
