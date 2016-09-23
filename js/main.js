@@ -1,7 +1,7 @@
     var color = ['red', 'yellow', 'blue', 'green', 'black', 'grey', 'orange', 'brown'];
     var currentColors = [0, 0, 0, 0];
     var nColor = color.length;
-    var code = [2, 2, 2, 2];
+    var code = [0,0,0,0];
     var correctPlace = 0;
     var nonCorrectPlace = 0;
     var i = 0;
@@ -36,7 +36,7 @@
     }
 
     function initGame() {
-        /*generateCode();*/
+        generateCode();
         $('#start').fadeOut(500);
         $('#main').delay(500).fadeIn(500);
         $('#submit').delay(500).fadeIn(500);
@@ -47,6 +47,7 @@
         for(i = 0; i < currentColors.length; i++) {
             code[i] = Math.floor(Math.random() * nColor-1);
         }
+        console.log("code: " + color[code[0]] + color[code[1]] + color[code[2]] + color[code[3]]);
     }
 
     $('#submit').click(function() {
